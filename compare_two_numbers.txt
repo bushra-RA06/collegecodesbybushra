@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+
+    // Input two numbers from user
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    // Compare the numbers
+    if (num1 > num2) {
+        printf("%d is greater than %d\n", num1, num2);
+    } else if (num1 < num2) {
+        printf("%d is less than %d\n", num1, num2);
+    } else {
+        printf("Both numbers are equal.\n");
+    }
+
+    return 0;
+}
