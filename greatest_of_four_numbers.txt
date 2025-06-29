@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c, d, greatest;
+
+    // Input four numbers
+    printf("Enter four numbers:\n");
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+
+    // Assume a is greatest first, then compare
+    greatest = a;
+
+    if (b > greatest)
+        greatest = b;
+    if (c > greatest)
+        greatest = c;
+    if (d > greatest)
+        greatest = d;
+
+    // Output the greatest number
+    printf("The greatest number is: %d\n", greatest);
+
+    return 0;
+}
